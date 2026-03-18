@@ -1,0 +1,247 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Agir Farma | Cuidando de você!</title>
+    <meta name="description" content="Agir Farma - Há mais de 30 anos cuidando do Bom Jardim. Saúde, confiança e acolhimento.">
+    <meta property="og:title" content="Agir Farma">
+    <meta property="og:description" content="Sua farmácia de confiança no Bom Jardim.">
+    <meta property="og:image" content="https://agirfarmafarmacia.com/img/2.jpeg">
+    <meta property="og:url" content="https://agirfarmafarmacia.com">
+    <meta property="og:type" content="website">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    fontFamily: {
+                        sans: ['Poppins', 'sans-serif'],
+                    },
+                    colors: {
+                        primary: '#1d4ed8',
+                        secondary: '#dc2626',
+                    }
+                }
+            }
+        }
+    </script>
+</head>
+<body class="bg-slate-50 text-gray-800 antialiased overflow-x-hidden">
+
+    <header id="header" class="fixed w-full top-0 z-50 transition-transform duration-300 glass-header">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex justify-between items-center h-20">
+                <div class="flex-shrink-0 flex items-center">
+                    <a href="#inicio" class="text-2xl font-bold text-primary flex items-center gap-2">
+                        <span class="text-secondary text-3xl">+</span> AGIR FARMA
+                    </a>
+                </div>
+                <nav class="hidden md:flex space-x-8">
+                    <a href="#inicio" class="text-gray-800 hover:text-primary font-semibold transition">Início</a>
+                    <a href="#sobre" class="text-gray-800 hover:text-primary font-semibold transition">Sobre Nós</a>
+                    <a href="#servicos" class="text-gray-800 hover:text-primary font-semibold transition">Serviços</a>
+                    <a href="#galeria" class="text-gray-800 hover:text-primary font-semibold transition">Galeria</a>
+                    <a href="#contato" class="text-gray-800 hover:text-primary font-semibold transition">Contato</a>
+                </nav>
+                <div class="hidden md:flex items-center">
+                    <a href="https://wa.me/558591135617" target="_blank" class="bg-green-500 hover:bg-green-600 text-white px-5 py-2 rounded-full font-semibold flex items-center gap-2 transition transform hover:scale-105 shadow-lg">
+                        <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 24 24"><path d="M.057 24l1.687-6.163c-1.041-1.804-1.588-3.849-1.587-5.946.003-6.556 5.338-11.891 11.893-11.891 3.181.001 6.167 1.24 8.413 3.488 2.245 2.248 3.481 5.236 3.48 8.414-.003 6.557-5.338 11.892-11.893 11.892-1.99-.001-3.951-.5-5.688-1.448l-6.305 1.654zm6.597-3.807c1.676.995 3.276 1.591 5.392 1.592 5.448 0 9.886-4.434 9.889-9.885.002-5.462-4.415-9.89-9.881-9.892-5.452 0-9.887 4.434-9.889 9.884-.001 2.225.651 3.891 1.746 5.634l-.999 3.648 3.742-.981zm11.387-5.464c-.074-.124-.272-.198-.57-.347-.297-.149-1.758-.868-2.031-.967-.272-.099-.47-.149-.669.149-.198.297-.768.967-.941 1.165-.173.198-.347.223-.644.074-.297-.149-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.297-.347.446-.521.151-.172.2-.296.3-.495.099-.198.05-.372-.025-.521-.075-.148-.669-1.611-.916-2.206-.242-.579-.487-.501-.669-.51l-.57-.01c-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.095 3.2 5.076 4.487.709.306 1.263.489 1.694.626.712.226 1.36.194 1.872.118.571-.085 1.758-.719 2.006-1.413.248-.695.248-1.29.173-1.414z"/></svg>
+                        Peça pelo WhatsApp
+                    </a>
+                </div>
+                <div class="md:hidden flex items-center">
+                    <button id="btn-menu" class="text-primary hover:text-secondary focus:outline-none">
+                        <svg class="w-8 h-8" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"></path></svg>
+                    </button>
+                </div>
+            </div>
+        </div>
+        <div id="menu-mobile" class="hidden md:hidden glass-panel border-t border-white/20">
+            <div class="px-2 pt-2 pb-3 space-y-1 sm:px-3">
+                <a href="#inicio" class="block px-3 py-2 rounded-md text-base font-medium text-gray-800 hover:text-primary hover:bg-white/50">Início</a>
+                <a href="#sobre" class="block px-3 py-2 rounded-md text-base font-medium text-gray-800 hover:text-primary hover:bg-white/50">Sobre Nós</a>
+                <a href="#servicos" class="block px-3 py-2 rounded-md text-base font-medium text-gray-800 hover:text-primary hover:bg-white/50">Serviços</a>
+                <a href="#galeria" class="block px-3 py-2 rounded-md text-base font-medium text-gray-800 hover:text-primary hover:bg-white/50">Galeria</a>
+                <a href="#contato" class="block px-3 py-2 rounded-md text-base font-medium text-gray-800 hover:text-primary hover:bg-white/50">Contato</a>
+                <a href="https://wa.me/558591135617" target="_blank" class="block px-3 py-2 mt-4 text-center rounded-md text-base font-medium bg-green-500 text-white hover:bg-green-600">Peça pelo WhatsApp</a>
+            </div>
+        </div>
+    </header>
+
+    <section id="inicio" class="relative h-screen flex items-center justify-center text-center">
+        <div class="absolute inset-0 z-0">
+            <img src="img/1.jpeg" alt="Interior Agir Farma" class="w-full h-full object-cover">
+            <div class="absolute inset-0 bg-gradient-to-b from-blue-900/80 to-black/60"></div>
+        </div>
+        <div class="relative z-10 px-4 animate-fade-in-up glass-card p-6 max-w-3xl mx-auto border border-white/6 rounded-3xl">
+            <h1 class="text-5xl md:text-7xl font-bold text-white mb-6 tracking-tight">AGIR <span class="text-secondary">+</span> FARMA</h1>
+            <p class="text-xl md:text-2xl text-gray-200 mb-10 font-light">Há mais de 30 anos cuidando do Bom Jardim</p>
+            </a>
+        </div>
+    </section>
+
+    <section id="sobre" class="py-24 relative overflow-hidden">
+        <div class="absolute top-[-10%] left-[-10%] w-96 h-96 bg-primary rounded-full mix-blend-multiply filter blur-3xl opacity-20"></div>
+        <div class="absolute bottom-[-10%] right-[-10%] w-96 h-96 bg-secondary rounded-full mix-blend-multiply filter blur-3xl opacity-20"></div>
+        <div class="max-w-5xl mx-auto px-4 relative z-10 text-center glass-panel p-10 md:p-16 rounded-3xl reveal">
+            <h2 class="text-4xl font-bold text-primary mb-10">Nossa História</h2>
+            <div class="text-lg text-gray-700 space-y-6 text-justify md:text-center leading-relaxed">
+                <p>Localizada na Avenida Oscar Araripe, nº 1890 – Bom Jardim – Fortaleza/CE, a Agir Farma dá continuidade a uma história construída no mesmo endereço há mais de três décadas, onde funcionava a tradicional Farmácia Alfaia.</p>
+                <p>Somos parte da história da comunidade. Evoluímos, modernizamos nossa estrutura e fortalecemos nosso compromisso, mas mantemos o mesmo propósito: cuidar das pessoas com responsabilidade, respeito e preço justo. Aqui, você encontra confiança, acolhimento e atenção verdadeira à sua saúde.</p>
+                <div class="grid md:grid-cols-2 gap-8 mt-12 text-left">
+                    <div class="glass-card p-6 rounded-2xl">
+                        <h3 class="text-2xl font-bold text-secondary mb-3">🎯 Nossa Missão</h3>
+                        <p class="text-sm">Promover saúde e qualidade de vida por meio de um atendimento humanizado, ético e acessível, oferecendo medicamentos e serviços farmacêuticos completos com responsabilidade técnica e compromisso social.</p>
+                    </div>
+                    <div class="glass-card p-6 rounded-2xl">
+                        <h3 class="text-2xl font-bold text-primary mb-3">👁️ Nossa Visão</h3>
+                        <p class="text-sm">Ser referência em cuidado farmacêutico no bairro Bom Jardim e em Fortaleza, reconhecida pela confiança, preços competitivos, excelência no atendimento e compromisso com a comunidade.</p>
+                    </div>
+                </div>
+                <div class="glass-card p-8 rounded-2xl mt-8 border-l-4 border-blue-400">
+                    <h3 class="text-2xl font-bold text-blue-600 mb-4">💙 Nosso Compromisso Social</h3>
+                    <p>A Agir Farma apoia a causa do Transtorno do Espectro Autista (TEA). As cores presentes em nossa identidade representam inclusão, respeito e empatia. Acreditamos que cuidar da saúde também é promover acessibilidade e acolhimento para todas as famílias.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="servicos" class="py-24 bg-gradient-to-br from-blue-50 to-red-50 relative">
+        <div class="max-w-7xl mx-auto px-4 reveal">
+            <h2 class="text-4xl font-bold text-center text-primary mb-16">Nossos Serviços</h2>
+            <div class="grid md:grid-cols-3 gap-10">
+                <div class="glass-card p-10 rounded-3xl text-center transform transition duration-500 hover:-translate-y-2 hover:shadow-2xl">
+                    <svg class="w-16 h-16 text-primary mx-auto mb-6" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                        <g fill="currentColor">
+                            <path fill="none" d="M0 0H24V24H0z" />
+                            <path d="M19 2v2h-2v3c1.657 0 3 1.343 3 3v11c0 .552-.448 1-1 1H5c-.552 0-1-.448-1-1V10c0-1.657 1.343-3 3-3V4H5V2h14zm-2 7H7c-.552 0-1 .448-1 1v10h12V10c0-.552-.448-1-1-1zm-4 2v2h2v2h-2.001L13 17h-2l-.001-2H9v-2h2v-2h2zm2-7H9v3h6V4z" />
+                        </g>
+                    </svg>
+                    <h3 class="text-2xl font-bold text-gray-800 mb-4">Medicamentos</h3>
+                    <p class="text-gray-600">Ampla variedade de medicamentos com preços competitivos, super descontos e condições especiais. Economia sem abrir mão da qualidade.</p>
+                </div>
+                <div class="glass-card p-10 rounded-3xl text-center transform transition duration-500 hover:-translate-y-2 hover:shadow-2xl border-b-4 border-secondary">
+                    <svg class="w-16 h-16 text-secondary mx-auto mb-6" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <circle cx="10" cy="6" r="4" stroke="currentColor" stroke-width="1.5"/>
+                        <path d="M19 2C19 2 21 3.2 21 6C21 8.8 19 10 19 10" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"/>
+                        <path d="M17 4C17 4 18 4.6 18 6C18 7.4 17 8 17 8" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"/>
+                        <path d="M17.9975 18C18 17.8358 18 17.669 18 17.5C18 15.0147 14.4183 13 10 13C5.58172 13 2 15.0147 2 17.5C2 19.9853 2 22 10 22C12.231 22 13.8398 21.8433 15 21.5634" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"/>
+                    </svg>
+                    <h3 class="text-2xl font-bold text-gray-800 mb-4">Serviços e Atendimento</h3>
+                    <p class="text-gray-600">Aplicação de injetáveis, aferição de pressão, teste de glicemia e orientação farmacêutica com profissional presente em tempo integral.</p>
+                </div>
+                <div class="glass-card p-10 rounded-3xl text-center transform transition duration-500 hover:-translate-y-2 hover:shadow-2xl">
+                    <svg class="w-16 h-16 text-primary mx-auto mb-6" fill="currentColor" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 442 442" xml:space="preserve">
+                        <g>
+                            <path d="M231.5,50.5c0-5.79-4.71-10.5-10.5-10.5c-5.79,0-10.5,4.71-10.5,10.5S215.21,61,221,61C226.79,61,231.5,56.29,231.5,50.5z" />
+                            <path d="M346,163.682h-60V122c0-5.522-4.478-10-10-10h-10V10c0-5.523-4.478-10-10-10h-70c-5.523,0-10,4.477-10,10v102h-10 c-5.523,0-10,4.478-10,10v41.682H96c-11.028,0-20,8.972-20,20V422c0,11.028,8.972,20,20,20h250c11.028,0,20-8.972,20-20V183.682 C366,172.653,357.028,163.682,346,163.682z M196,20h50v92h-50V20z M96,422V183.682h70c5.523,0,10-4.477,10-10V132h35v71.682h-85 c-5.523,0-10,4.478-10,10V392c0,5.522,4.477,10,10,10h190c5.522,0,10-4.478,10-10v-60.892c0-5.522-4.478-10-10-10s-10,4.478-10,10 V382H136V223.682h75V352c0,5.522,4.477,10,10,10c5.523,0,10-4.478,10-10V223.682h75V297c0,5.522,4.478,10,10,10s10-4.478,10-10 v-83.318c0-5.522-4.478-10-10-10h-85V132h35v41.682c0,5.523,4.478,10,10,10h70L346.002,422H96z" />
+                        </g>
+                    </svg>
+                    <h3 class="text-2xl font-bold text-gray-800 mb-4">Perfumaria e Higiene</h3>
+                    <p class="text-gray-600">Completa linha de perfumaria, cosméticos e produtos de higiene pessoal para o seu bem-estar diário e da sua família.</p>
+                </div>
+            </div>
+            <div class="mt-16 text-center glass-panel p-8 rounded-2xl max-w-4xl mx-auto border border-green-200">
+                <h3 class="text-2xl font-bold text-green-600 mb-2">🚚 Entrega Gratuita</h3>
+                <p class="text-gray-700">Pensando na comodidade da população do Bom Jardim, oferecemos entrega gratuita. Cuidamos da sua saúde onde você estiver.</p>
+            </div>
+        </div>
+    </section>
+
+    <section id="galeria" class="py-24 relative">
+        <div class="max-w-7xl mx-auto px-4 reveal">
+            <h2 class="text-4xl font-bold text-center text-primary mb-16">Nossa Estrutura</h2>
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+                <div class="overflow-hidden rounded-2xl shadow-lg group">
+                    <img src="img/2.jpeg" alt="Fachada Agir Farma" class="w-full h-72 object-cover transform transition duration-500 group-hover:scale-110">
+                </div>
+                <div class="overflow-hidden rounded-2xl shadow-lg group">
+                    <img src="img/1.jpeg" alt="Interior Loja 1" class="w-full h-72 object-cover transform transition duration-500 group-hover:scale-110">
+                </div>
+                <div class="overflow-hidden rounded-2xl shadow-lg group">
+                    <img src="img/3.jpeg" alt="Interior Loja 2" class="w-full h-72 object-cover transform transition duration-500 group-hover:scale-110">
+                </div>
+                <div class="overflow-hidden rounded-2xl shadow-lg group">
+                    <img src="img/4.jpeg" alt="Serviços Farmacêuticos" class="w-full h-72 object-cover transform transition duration-500 group-hover:scale-110">
+                </div>
+                <div class="overflow-hidden rounded-2xl shadow-lg group md:col-span-2 lg:col-span-2">
+                    <img src="img/5.jpeg" alt="Atendimento no Balcão" class="w-full h-72 object-cover object-bottom transform transition duration-500 group-hover:scale-110">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="contato" class="py-24 bg-gray-900 text-white relative overflow-hidden">
+        <div class="absolute inset-0 bg-[url('img/2.jpeg')] opacity-10 bg-cover bg-center bg-fixed"></div>
+        <div class="max-w-7xl mx-auto px-4 relative z-10 reveal">
+            <h2 class="text-4xl font-bold text-center mb-16">Contato e Localização</h2>
+            <div class="grid md:grid-cols-2 gap-12 items-stretch">
+                <div class="glass-card-dark p-10 rounded-3xl flex flex-col justify-center border border-gray-700 space-y-6">
+                    <div>
+                        <h3 class="text-2xl font-bold text-blue-400 mb-6 border-b border-gray-700 pb-2">Informações da Empresa</h3>
+                        <p class="mb-2"><strong class="text-gray-400">Nome Empresarial:</strong> AGIRFARMA FARMACIA LTDA</p>
+                        <p class="mb-2"><strong class="text-gray-400">CNPJ:</strong> 58.363.089/0001-30</p>
+                    </div>
+                    <div>
+                        <h3 class="text-xl font-bold text-blue-400 mb-4 border-b border-gray-700 pb-2">Endereço</h3>
+                        <p class="mb-1">AV OSCAR ARARIPE, 1890</p>
+                        <p class="mb-1">Bairro: BOM JARDIM</p>
+                        <p class="mb-1">FORTALEZA - CE</p>
+                        <p>CEP: 60.543-451</p>
+                    </div>
+                    <div>
+                        <h3 class="text-xl font-bold text-blue-400 mb-4 border-b border-gray-700 pb-2">Contatos</h3>
+                        <p class="mb-2"><strong class="text-gray-400">Telefone:</strong> (85) 3245-4048</p>
+                        <p class="mb-2"><strong class="text-gray-400">WhatsApp:</strong> (85) 9113-5617 / (85) 98552-4913</p>
+                        <p class="mb-2"><strong class="text-gray-400">E-mail:</strong> JUNIORDAFARMACIA6561@GMAIL.COM</p>
+                    </div>
+                </div>
+                <div class="h-[500px] md:h-auto rounded-3xl overflow-hidden shadow-2xl border border-gray-700">
+                    <iframe 
+                        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3981.259253755455!2d-38.61113072414704!3d-3.797437796175878!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x7c74c3e8f810b4f%3A0xc6fb6e8cfd85d7b5!2sAv.%20Oscar%20Araripe%2C%201890%20-%20Bom%20Jardim%2C%20Fortaleza%20-%20CE%2C%2060543-452!5e0!3m2!1spt-BR!2sbr!4v1716300000000!5m2!1spt-BR!2sbr" 
+                        width="100%" 
+                        height="100%" 
+                        style="border:0;" 
+                        allowfullscreen="" 
+                        loading="lazy" 
+                        referrerpolicy="no-referrer-when-downgrade">
+                    </iframe>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer class="bg-black py-8 border-t border-gray-800">
+        <div class="max-w-7xl mx-auto px-4 text-center">
+            <p class="text-gray-400 text-sm mb-2">&copy; <span id="ano"></span> AGIRFARMA FARMACIA LTDA. Todos os direitos reservados.</p>
+            <p class="text-gray-500 text-xs mb-4">CNPJ: 58.363.089/0001-30</p>
+            <a href="#" id="btn-modal" class="text-blue-500 hover:text-blue-400 text-sm transition underline">Política de Privacidade</a>
+        </div>
+    </footer>
+
+    <div id="modal" class="fixed inset-0 z-[100] hidden flex items-center justify-center p-4 bg-black/60 backdrop-blur-sm">
+        <div class="bg-white rounded-3xl p-8 max-w-2xl w-full max-h-[90vh] overflow-y-auto relative shadow-2xl border border-gray-200">
+            <button id="fechar-modal" class="absolute top-4 right-4 text-gray-500 hover:text-red-500 transition">
+                <svg class="w-8 h-8" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12"></path></svg>
+            </button>
+            <h2 class="text-2xl font-bold text-primary mb-6">Política de Privacidade</h2>
+            <div class="text-gray-700 space-y-4 text-sm text-justify">
+                <p>A <strong>Agir Farma</strong> valoriza a sua privacidade e garante o sigilo das informações que você nos fornece. Esta Política de Privacidade descreve como tratamos as informações em nosso site institucional.</p>
+                <h3 class="font-bold text-gray-900 mt-4">1. Coleta de Dados</h3>
+                <p>Nosso site possui caráter meramente informativo e institucional. Não realizamos a coleta automatizada de dados pessoais, formulários de cadastro ou vendas diretas através desta página web. O único canal interativo disponível é o redirecionamento para o nosso aplicativo WhatsApp.</p>
+                <h3 class="font-bold text-gray-900 mt-4">2. Uso do WhatsApp</h3>
+                <p>Ao clicar no botão "Peça pelo WhatsApp", você será redirecionado para o aplicativo de mensagens de terceiros (WhatsApp). As informações trocadas por este canal seguirão as políticas de privacidade da plataforma provedora do serviço e serão utilizadas exclusivamente para fins de atendimento ao cliente, orçamentos e delivery.</p>
+                <h3 class="font-bold text-gray-900 mt-4">3. Cookies</h3>
+                <p>Este site pode utilizar cookies básicos necessários apenas para o funcionamento técnico da navegação. Não utilizamos cookies para rastreamento de marketing ou venda de dados a terceiros.</p>
+                <h3 class="font-bold text-gray-900 mt-4">4. Contato</h3>
+                <p>Em caso de dúvidas sobre esta política, entre em contato através do e-mail: JUNIORDAFARMACIA6561@GMAIL.COM ou pelo telefone (85) 3245-4048.</p>
+            </div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
